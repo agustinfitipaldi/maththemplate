@@ -14,6 +14,7 @@
 )
 #set par(first-line-indent: 0pt)
 #set block(spacing: 2.5em)
+#show math.equation: set block(spacing: 0.65em)
 */
 
 // Basic problem environment with yellow background (no number)
@@ -36,7 +37,7 @@
       columns: (auto, 1fr),
       inset: (x: 0pt, y: 0pt),
       stroke: none,
-      align: (center + horizon, left + horizon),
+      align: (center + horizon, left + top),
       column-gutter: 12pt,
       [
         #box(
