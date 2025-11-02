@@ -1,22 +1,14 @@
 #import "homework-template.typ": *
 
-// Page setup
-#set page(
-  margin: (left: 1.7in, right: 1.7in),
-  numbering: "1",
-  footer: [
-    #align(center)[#context [#counter(page).display()]]
-  ],
+#show: homework.with(
+  hw_number: "Fix Test",
+  course: "Typst Testing",
+  name: "Testing Lists & Math"
 )
-#set par(first-line-indent: 0pt)
-#set block(spacing: 2.5em)
-#show math.equation: set block(spacing: 0.65em)
-
-#homework_title("Fix Test", "Typst Testing", "Testing Lists & Math")
 
 #section_header[Testing Indented Lists]
 
-#numbered_problem(1)[
+#np(1)[
   Here's a regular list:
   - First item
   - Second item
@@ -36,7 +28,7 @@
 
 #section_header[Testing Display Math Spacing]
 
-#numbered_problem(2)[
+#np(2)[
   Here's some text before the math.
 
   $
@@ -52,7 +44,7 @@
   More text after another equation.
 ]
 
-#numbered_problem(3)[
+#np(3)[
   Combined test - lists with math:
   - First item with inline math: $f(x) = x^2$
   - Second item with display math below:
