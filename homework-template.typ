@@ -22,9 +22,10 @@
   // Paragraph and spacing settings
   set par(first-line-indent: 0pt)
   set block(spacing: 2.5em)
+  set enum(numbering: "a)")
 
   // Reduce excessive spacing around display math
-show math.equation: set block(spacing: 1em)
+  show math.equation: set block(spacing: 1em)
 
   // Optional title if parameters provided
   if hw_number != none and course != none and name != none {
